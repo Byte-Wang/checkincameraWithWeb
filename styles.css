@@ -37,6 +37,15 @@ body.gradient {
   background: transparent; color: #fff; border: none; resize: none;
   font-family: 'HarmonyHeiTi-Medium', 'HarmonyHeiTi', sans-serif; font-size: 11px; line-height: 1.2;
   text-shadow: 0 0 1.2px rgba(0,0,0,1);
+  cursor: pointer;
 }
 .text-overlay:focus { outline: none; }
 .text-overlay.focus-top { bottom: auto; top: 0; height: 139px; }
+
+.hidden { display: none !important; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 1000; }
+.modal-content { background: #fff; border-radius: 12px; width: 100%; max-width: 480px; padding: 16px; z-index: 1001; }
+.modal-title { margin: 0 0 8px; font-size: 18px; color: #333; }
+.modal-textarea { width: 100%; height: 180px; resize: vertical; font-family: 'HarmonyHeiTi-Medium', 'HarmonyHeiTi', sans-serif; font-size: 13px; line-height: 1.4; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 12px; }
+.btn.secondary { background: #e6f2fb; color: rgb(26,128,204); }

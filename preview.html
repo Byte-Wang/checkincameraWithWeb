@@ -14,6 +14,16 @@
       <textarea id="textOverlay" class="text-overlay"></textarea>
     </div>
     <button id="saveBtn" class="btn">保存到相册</button>
+    <div id="editModal" class="modal hidden">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="editTitle">
+        <h2 id="editTitle" class="modal-title">编辑文案</h2>
+        <textarea id="editTextarea" class="modal-textarea"></textarea>
+        <div class="modal-actions">
+          <button id="cancelEdit" type="button" class="btn secondary">取消</button>
+          <button id="confirmEdit" type="button" class="btn">确定</button>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="preview.js"></script>
 </body>
